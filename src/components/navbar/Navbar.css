@@ -1,0 +1,40 @@
+.navbar {
+    display: flex;
+    width: 100vw;
+    height: 3.5rem;
+    background-color: #77151F;
+    justify-content: center;
+    align-items: center;
+
+    .opciones {
+        padding: 1rem;
+        width: 32rem;
+        height: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        font-family: "Jacques Francois", serif;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 20px;
+        text-shadow: 0px 4px 4px #000000;
+        /* display: none; */
+    }
+
+    .nysa_black{
+        width: 64px;
+        position: absolute;
+        right: 6rem;
+        top: 1rem;
+    }
+
+    .menu-toggle{
+        display: none;
+        img{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 4rem;
+        }
+    }
+}
