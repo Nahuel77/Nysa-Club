@@ -5,7 +5,6 @@ const Foot: React.FC = () => {
     return (
         <>
         <div className='foot'>
-
         </div>
         </>
     );

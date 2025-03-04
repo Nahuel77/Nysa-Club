@@ -1,0 +1,40 @@
+.contacto-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: row;
+}
+
+.contacto-info,
+.contacto-form {
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.info {
+    color: black;
+    font-family: "Inria Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.red-img{
+    width: 3rem;
+    margin: .5rem;
+}

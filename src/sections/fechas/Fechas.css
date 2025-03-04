@@ -1,0 +1,28 @@
+.fechas-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.fechas-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ninfa_caratula{
+    width: 15rem;
+}
+
+.fecha{
+    color: black;
+    font-size: 1.3rem;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: -1px;
+    font-style: normal;
+    font-weight: 100;
+    padding: .5rem;
+}
