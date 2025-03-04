@@ -3,13 +3,15 @@
   line-height: 1.5;
 
   color-scheme: light dark;
-  color: #933A46;
+  color: #77151F;
   background-color: #EEE7DD;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-smooth: never;
+  overflow-x: hidden;
 }
 
 a {

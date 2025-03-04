@@ -1,0 +1,22 @@
+.params-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    min-height: 80vh;
+    background-image: url('mdp.jpeg');
+    background-size: cover;
+    background-position: center top -22rem;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.params-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.param-corona{
+    width: 8rem;
+    margin: 1rem;
+}

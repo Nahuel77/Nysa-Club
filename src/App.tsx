@@ -1,7 +1,10 @@
-import './App.css'
+import './App.css';
 import Foot from './components/foot/Foot';
 import Navbar from './components/navbar/Navbar';
 import Separator from './components/separator/Separator';
+import Params from './sections/params/Params';
+import Quienes_somos from './sections/quienes_somos/Quienes_somos';
+import Section_one from './sections/section_one/Section_one';
 
 function App() {
 
@@ -9,9 +12,15 @@ function App() {
     <>
       <Navbar/>
       <Separator/>
+      <Section_one/>
+      <Separator/>
+      <Quienes_somos/>
+      <Separator/>
+      <Params/>
+      <Separator/>
       <Foot/>
     </>
   )
 }
 
-export default App
+export default App;
