@@ -5,7 +5,8 @@
     min-height: 30rem;
     background-image: url('mdp.jpeg');
     background-size: cover;
-    background-position: center top -22rem;
+    background-position: center;
+    background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
     margin: 3rem 0 2rem 0;
@@ -19,4 +20,15 @@
 .param-corona{
     width: 8rem;
     margin: 1rem;
+}
+
+@media (max-width: 768px) {
+    .params-container{
+        flex-direction: row;
+        padding: 3rem 0;
+    }
+
+    .params-row{
+        flex-direction: column;
+    }
 }
