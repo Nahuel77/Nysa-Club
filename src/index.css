@@ -18,6 +18,7 @@ a {
   color: #EEE7DD;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #EEE7DD;
 }
@@ -25,6 +26,8 @@ a:hover {
 body {
   margin: 0;
   display: flex;
+  width: 100vw;
+  box-shadow: 0 0 8rem black inset;
 }
 
 h1 {
@@ -34,7 +37,7 @@ h1 {
   margin: 0;
 }
 
-h2{
+h2 {
   color: black;
   font-family: "Petrona", serif;
   font-optical-sizing: auto;
@@ -53,9 +56,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -65,10 +70,19 @@ button:focus-visible {
   :root {
     color: #213547;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-weight: 600;
+    font-size: 2rem;
   }
 }

@@ -38,3 +38,17 @@
     width: 3rem;
     margin: .5rem;
 }
+
+.city{
+    padding: .5rem;
+}
+
+.info-city{
+    line-height: 1;
+}
+
+@media (max-width: 768px) {
+    .contacto{
+        flex-direction: column;
+    }
+}

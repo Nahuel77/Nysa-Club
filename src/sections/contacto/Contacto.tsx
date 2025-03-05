@@ -10,10 +10,12 @@ const Contacto: React.FC = () => {
                     <div className='contacto-info'>
                         <p className="info">Luciana Ambrosio</p>
                         <p className="info">Fundadora - Sommelier</p>
-                        <p className="info">Cel: +54 9 2234 78-4642</p>
-                        <p className="info">nysaclub@nysa.com</p>
-                        <p className="info">Mar del Plata</p>
-                        <p className="info">Buenos Aires - Argentina</p>
+                        <p className="info">Cel: +54 9 2236 81-4668</p>
+                        <p className="info">nysaclub@gmail.com</p>
+                        <div className='city'>
+                            <p className="info info-city">Mar del Plata</p>
+                            <p className="info info-city">Buenos Aires - Argentina</p>
+                        </div>
                         <div className='redes'>
                             <div className="redlnk"><img className='red-img' src="youtb.png" alt="" /></div>
                             <div className="redlnk"><img className='red-img' src="face.png" alt="" /></div>
@@ -21,7 +23,7 @@ const Contacto: React.FC = () => {
                         </div>
                     </div>
                     <div className='contacto-form'>
-                        <Form/>
+                        <Form />
                     </div>
                 </div>
             </div>

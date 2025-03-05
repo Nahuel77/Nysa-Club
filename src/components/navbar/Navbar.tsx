@@ -1,24 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Navbar.css';
-import { Link } from "react-router-dom";
 
 const Navbar: React.FC = () => {
+    const [menuOpen, setMenuOpen] = useState<boolean>(false);
+
+    const handleMenu = () => {
+        setMenuOpen(!menuOpen);
+    }
 
     return (
         <>
-            <div className='navbar'>
-                <div className='menu-toggle'>
+            <div className='desk-navbar'>
+                <div className='menu-toggle' onClick={handleMenu}>
                     <img src="/menu_wax.png" alt="menu" />
                 </div>
-                <div className='opciones'>
-                    <div className='opcion'><Link to="/">Quienes Somos</Link></div>
-                    <div className='opcion'><Link to="/">Próximos Eventos</Link></div>
-                    <div className='opcion'><Link to="/">Contacto</Link></div>
-                </div>
-                <div>
-                    <Link to="/">
-                        <img className='nysa_black' src="/nysa_logo_black.png" alt="Nysa Club" />
-                    </Link>
+                <div className='content-fold'>
+                    <ul className='opciones'>
+                        <li className='opcion'><a href="#">Quienes Somos</a></li>
+                        <li className='opcion'><a href="#">Próximos Eventos</a></li>
+                        <li className='opcion'><a href="#">Contacto</a></li>
+                    </ul>
+                    <div className='nysa_black_logo'>
+                        <a href="#">
+                            <img className='nysa_black' src="/nysa_logo_black.png" alt="Nysa Club" />
+                        </a>
+                    </div>
                 </div>
             </div>
         </>

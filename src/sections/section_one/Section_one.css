@@ -6,12 +6,24 @@
     align-items: center;
     text-align: center;
 
+}
+
+.head_s_one{
+    color: #77151F;
+}
+
+.content_s_one{
+    width: 30rem;
+    color: black;
+}
+
+@media (max-width: 768px) {
+
     .head_s_one{
-        color: #77151F;
+        font-size: .9rem;
     }
 
     .content_s_one{
-        width: 30rem;
-        color: black;
+        width: 18rem;
     }
 }

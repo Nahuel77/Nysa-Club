@@ -8,3 +8,9 @@
 .separator{
     width: 15rem;
 }
+
+@media (max-width: 768px) {
+    .separator{
+        width: 10rem;
+    }
+}
