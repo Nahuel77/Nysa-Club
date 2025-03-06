@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Navbar.css';
+import Redes from '../redes/Redes';
 
 function useMediaQuery(query: string) {
     const [matches, setMatches] = useState(window.matchMedia(query).matches);
@@ -50,18 +51,21 @@ const Navbar: React.FC = () => {
                     <h2 className='menu-title'>Menu</h2>
                     <ul className='opciones'>
                         <li className='opcion'>
-                            <a href="#">Quienes Somos</a>
+                            <a href="#quienes_somos">Quienes Somos</a>
                             <img className='underline' src="under-line-menu.png" alt="underline" />
                         </li>
                         <li className='opcion'>
-                            <a href="#">Próximos Eventos</a>
+                            <a href="#fechas">Próximos Eventos</a>
                             <img className='underline' src="under-line-menu.png" alt="underline" />
                         </li>
                         <li className='opcion'>
-                            <a href="#">Contacto</a>
+                            <a href="#contacto">Contacto</a>
                             <img className='underline' src="under-line-menu.png" alt="underline" />
                         </li>
                     </ul>
+                    <div className='redes-content'>
+                        <Redes />
+                    </div>
                     <div className='nysa_black_logo'>
                         <a href="#">
                             <img className='nysa_black' src="/nysa_logo_black.png" alt="Nysa Club" />

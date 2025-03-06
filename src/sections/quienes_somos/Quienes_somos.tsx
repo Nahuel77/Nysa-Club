@@ -3,7 +3,7 @@ import './Quienes_somos.css';
 const Quienes_somos: React.FC = () => {
     return (
         <>
-            <div className='quienes_container'>
+            <div className='quienes_container' id='quienes_somos'>
                 <h2>Quienes Somos</h2>
                 <div className='quienes_content'>
                     <div className='elegant-frame'><img className='nymphes_de_Nysa' src="elegant_frame.png" alt="frame" /></div>

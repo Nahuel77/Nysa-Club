@@ -1,10 +1,11 @@
 import Form from '../../components/form/Form';
+import Redes from '../../components/redes/Redes';
 import './Contacto.css';
 
 const Contacto: React.FC = () => {
     return (
         <>
-            <div className='contacto-container'>
+            <div className='contacto-container' id='contacto'>
                 <h2>Contacto</h2>
                 <div className='contacto'>
                     <div className='contacto-info'>
@@ -16,11 +17,7 @@ const Contacto: React.FC = () => {
                             <p className="info info-city">Mar del Plata</p>
                             <p className="info info-city">Buenos Aires - Argentina</p>
                         </div>
-                        <div className='redes'>
-                            <div className="redlnk"><img className='red-img' src="youtb.png" alt="" /></div>
-                            <div className="redlnk"><img className='red-img' src="face.png" alt="" /></div>
-                            <div className="redlnk"><img className='red-img' src="insta.png" alt="" /></div>
-                        </div>
+                        <Redes/>
                     </div>
                     <div className='contacto-form'>
                         <Form />

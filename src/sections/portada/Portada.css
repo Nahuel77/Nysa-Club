@@ -1,0 +1,51 @@
+.portada {
+    width: 100%;
+    height: 120vh;
+    background-image: url('./portada_background.png');
+    background-position: center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}
+
+.tono-portada {
+    background: linear-gradient(to bottom, #eee7dd9a 50%, #eee7dd00); /*agregar otro gradiente vertical, o considerar solo uno vertical*/
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    background-image: url('./laureles.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 18rem;
+    height: 18rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.nysa-logo {
+    width: 6rem;
+    padding-top: .8rem;
+}
+
+.marca {
+    font-family: "Jacques Francois", serif;
+    font-size: 4rem;
+    font-weight: 800;
+    font-style: normal;
+    text-shadow: 0px 4px 6px #000000;
+}
+
+@media (max-width: 768px) {
+    .portada {
+        background-image: none;
+    }
+}

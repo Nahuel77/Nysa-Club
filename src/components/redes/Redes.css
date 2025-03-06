@@ -1,0 +1,11 @@
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.red-img{
+    width: 3rem;
+    margin: .5rem;
+}
