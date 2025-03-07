@@ -1,6 +1,7 @@
 import './App.css';
 import Foot from './components/foot/Foot';
 import Navbar from './components/navbar/Navbar';
+import Separador_grande from './components/separador_grande/Separador_grande';
 import Separator from './components/separator/Separator';
 import Contacto from './sections/contacto/Contacto';
 import Fechas from './sections/fechas/Fechas';
@@ -15,6 +16,7 @@ function App() {
     <>
       <Navbar/>
       <Portada/>
+      <Separador_grande/>
       <Separator/>
       <Section_one/>
       <Separator/>

@@ -1,9 +1,15 @@
 import './Quienes_somos.css';
+import { motion } from 'framer-motion';
 
 const Quienes_somos: React.FC = () => {
     return (
         <>
-            <div className='quienes_container' id='quienes_somos'>
+            <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1 }}
+                viewport={{ once: false }}
+                className='quienes_container' id='quienes_somos'>
                 <h2>Quienes Somos</h2>
                 <div className='quienes_content'>
                     <div className='elegant-frame'><img className='nymphes_de_Nysa' src="elegant_frame.png" alt="frame" /></div>
@@ -15,7 +21,7 @@ const Quienes_somos: React.FC = () => {
                         <p className='quienes_text'>En Nysa Club ®, cada encuentro es una invitación a vivir y saborear el vino de una manera auténtica, divertida y educativa. Te invitamos a ser parte de esta experiencia exclusiva, ¡donde cada copa cuenta una historia!</p>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </>
     );
 }

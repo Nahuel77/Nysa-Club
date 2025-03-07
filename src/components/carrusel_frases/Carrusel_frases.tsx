@@ -5,7 +5,8 @@ import './Carrusel_frases.css';
 
 const Carrusel_frases: React.FC = () => {
     const [frases, setFrases] = useState<string[][]>([]);
-    const [frase, setFrase] = useState<string>("");
+    const [fraseActual, setFraseActual] = useState<string>("");
+    const [fade, setFade] = useState<boolean>(false);
 
     useEffect(() => {
         fetch("https://docs.google.com/spreadsheets/d/e/2PACX-1vRE9hPwqh_cIi9zht8y_-tKaY8pJEtFd6pKnRM3ymV9o9jl2tmmVtHaoR8LigRPIjd0t3bfcuP2DU1d/pub?gid=0&single=true&output=csv")
@@ -13,15 +14,24 @@ const Carrusel_frases: React.FC = () => {
             .then(csv => {
                 const rows = csv.split("\n").map(row => [row.trim()]);
                 setFrases(rows);
+                setFraseActual(rows[0][0]);
             })
             .catch(err => console.error("Error al cargar frases: ", err));
     }, []);
 
     useEffect(() => {
-        if (frases.length > 0) {
-            const randomIndex = Math.floor(Math.random() * frases.length);
-            setFrase(frases[randomIndex][0]);
-        }
+        const interval = setInterval(() => {
+            setFade(true);
+            setTimeout(() => {
+                setFraseActual((prevFrase) => {
+                    const currentIndex = frases.findIndex((item) => item[0] === prevFrase);
+                    const nextIndex = (currentIndex + 1) % frases.length;
+                    return frases[nextIndex][0];
+                });
+                setFade(false);
+            }, 500);
+        }, 8000);
+        return () => clearInterval(interval);
     }, [frases]);
 
     const cleanText = (text: string) => text.trim().replace(/^"(.*)"$/, "$1");
@@ -29,7 +39,7 @@ const Carrusel_frases: React.FC = () => {
     return (
         <>
             <div>
-                <p className='frase-portada'>{cleanText(frase)}</p>
+                <p className={`frase-portada ${fade ? "fade" : ""}`}>{cleanText(fraseActual)}</p>
             </div>
         </>
     );

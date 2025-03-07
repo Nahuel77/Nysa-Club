@@ -1,0 +1,14 @@
+.separador_grande{
+    display: flex;
+    width: 100%;
+    background-image: url('./bg_separador.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    justify-content: center;
+    align-items: center;
+}
+
+.nysa_wax{
+    width: 30rem;
+}
