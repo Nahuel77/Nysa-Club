@@ -1,7 +1,7 @@
 .portada {
     width: 100%;
     height: 110vh;
-    background-image: url('./portada_background.png');
+    background-image: url('./img/portada_background.png');
     background-position: center;
     background-size: 90%;
     background-repeat: no-repeat;
@@ -19,7 +19,7 @@
 }
 
 .logo {
-    background-image: url('./laureles.png');
+    background-image: url('./img/laureles.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -37,7 +37,7 @@
 }
 
 .marca {
-    font-family: "Jacques Francois", serif;
+    font-family: "Bosque";
     font-size: 4rem;
     font-weight: 800;
     font-style: normal;

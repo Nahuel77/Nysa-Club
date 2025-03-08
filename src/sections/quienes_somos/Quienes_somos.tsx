@@ -12,7 +12,7 @@ const Quienes_somos: React.FC = () => {
                 className='quienes_container' id='quienes_somos'>
                 <h2>Quienes Somos</h2>
                 <div className='quienes_content'>
-                    <div className='elegant-frame'><img className='nymphes_de_Nysa' src="elegant_frame.png" alt="frame" /></div>
+                    <div className='elegant-frame'><img className='nymphes_de_Nysa' src="./img/elegant_frame.png" alt="frame" /></div>
                     <div className='quienes_text_container'>
                         <p className='quienes_text'>En Nysa Club ®, nos apasiona el arte de disfrutar el vino y compartirlo con quienes buscan vivir experiencias únicas. Somos un espacio dedicado a los amantes del vino, donde cada cata y evento se convierte en una experiencia inolvidable.</p>
                         <p className='quienes_text'>Guiados por nuestra experiencia como Sommelier, ofrecemos una propuesta exclusiva y personalizada que une la naturaleza, la cultura y el arte del buen vino.</p>

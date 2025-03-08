@@ -30,9 +30,9 @@
 
 .quienes_text {
     color: black;
-    font-size: .9rem;
+    font-size: 1.3rem;
+    -webkit-text-stroke: .5px rgb(66, 66, 66);
     text-align: center;
-    font-family: "Open Sans", sans-serif;
     letter-spacing: -1px;
     font-style: normal;
     font-weight: 100;

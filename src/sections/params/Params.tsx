@@ -11,9 +11,9 @@ const Params: React.FC = () => {
                     transition={{ duration: 1 }}
                     viewport={{ once: false }}
                     className='params-row'>
-                    <div><img className='param-corona' src="corona_prix.png" alt="" /></div>
-                    <div><img className='param-corona' src="corona_prix.png" alt="" /></div>
-                    <div><img className='param-corona' src="corona_prix.png" alt="" /></div>
+                    <div><img className='param-corona' src="./img/corona_prix.png" alt="param" /></div>
+                    <div><img className='param-corona' src="./img/corona_prix.png" alt="param" /></div>
+                    <div><img className='param-corona' src="./img/corona_prix.png" alt="param" /></div>
                 </motion.div>
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
@@ -21,9 +21,9 @@ const Params: React.FC = () => {
                     transition={{ duration: 1 }}
                     viewport={{ once: false }}
                     className='params-row'>
-                    <div><img className='param-corona' src="corona_prix.png" alt="" /></div>
-                    <div><img className='param-corona' src="corona_prix.png" alt="" /></div>
-                    <div><img className='param-corona' src="corona_prix.png" alt="" /></div>
+                    <div><img className='param-corona' src="./img/corona_prix.png" alt="param" /></div>
+                    <div><img className='param-corona' src="./img/corona_prix.png" alt="param" /></div>
+                    <div><img className='param-corona' src="./img/corona_prix.png" alt="param" /></div>
                 </motion.div>
             </div>
         </>

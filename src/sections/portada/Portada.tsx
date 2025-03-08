@@ -13,7 +13,7 @@ const Portada: React.FC = () => {
                 viewport={{ once: false }}
                 >
                 <div className='tono-portada'>
-                    <div className='logo'><img className='nysa-logo' src="./nysa_logo.png" alt="Nysa" /></div>
+                    <div className='logo'><img className='nysa-logo' src="./img/nysa_logo.png" alt="Nysa" /></div>
                     <h1 className='marca'>Nysa Club</h1>
                     <div><Carrusel_frases /></div>
                 </div>

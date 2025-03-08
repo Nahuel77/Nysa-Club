@@ -21,7 +21,8 @@
 .fecha{
     color: black;
     font-size: 1.3rem;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Bosque";
+    -webkit-text-stroke: .5px rgb(66, 66, 66);
     letter-spacing: -1px;
     font-style: normal;
     font-weight: 100;

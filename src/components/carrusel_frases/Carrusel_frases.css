@@ -1,10 +1,23 @@
+.carrusel{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    max-width: 100%;
+}
+
 .frase-portada{
+    max-width: 80%;
     color: black;
-    font-family: "Oooh Baby", cursive;
-    font-size: 2rem;
+    font-family: "Autumn";
+    -webkit-text-stroke: .3px black;
+    font-size: 3rem;
     font-weight: 400;
     text-shadow: 0px 4px 4px #000000;
     transition: opacity .5s ease-in-out;
+    text-align: center;
+    margin: 1rem 0 0 0;
+    line-height: 3rem;
+
 }
 
 .frase-portada.fade{

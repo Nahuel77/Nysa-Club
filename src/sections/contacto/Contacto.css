@@ -20,7 +20,8 @@
 
 .info {
     color: black;
-    font-family: "Inria Serif", serif;
+    font-family: "Bosque";
+    -webkit-text-stroke: .3px black;
     font-weight: 400;
     font-style: normal;
     font-size: 1.5rem;

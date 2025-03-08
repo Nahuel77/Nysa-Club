@@ -38,7 +38,7 @@ const Carrusel_frases: React.FC = () => {
 
     return (
         <>
-            <div>
+            <div className='carrusel'>
                 <p className={`frase-portada ${fade ? "fade" : ""}`}>{cleanText(fraseActual)}</p>
             </div>
         </>

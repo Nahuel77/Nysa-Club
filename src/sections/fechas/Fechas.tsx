@@ -31,7 +31,7 @@ const Fechas: React.FC = () => {
                 <h2>Próximos Eventos</h2>
                 <div className='fechas-content'>
                     <div className='fechas-caratulas'>
-                        <img className='ninfa_caratula' src="ninfa_caratula.png" alt="Nysa" />
+                        <img className='ninfa_caratula' src="./img/ninfa_caratula.png" alt="Nysa" />
                     </div>
                     <ul className='fechas'>
                         {fechas.map((row, index) => (

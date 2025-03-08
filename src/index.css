@@ -1,5 +1,5 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Bosque";
   line-height: 1.5;
 
   color-scheme: light dark;
@@ -14,6 +14,17 @@
   overflow-x: hidden;
 }
 
+@font-face{
+  font-family: "Bosque";
+  src: url("./fonts/bosque/BOSQUE.ttf");
+}
+
+@font-face{
+  font-family: "Autumn";
+  src: url("./fonts/autumn_wind/Autumn Wind.ttf");
+
+}
+
 a {
   color: #EEE7DD;
   text-decoration: inherit;
@@ -26,7 +37,6 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  /* width: 100vw; */
   box-shadow: 0 0 8rem black inset;
   overflow-x: hidden;
 }
@@ -39,11 +49,12 @@ h1 {
 }
 
 h2 {
+  font-family: "Autumn";
   color: black;
-  font-family: "Petrona", serif;
   font-optical-sizing: auto;
   font-weight: 600;
-  font-size: 2.5rem;
+  font-size: 4rem;
+  -webkit-text-stroke: 1px #000000;
 }
 
 button {
