@@ -18,6 +18,10 @@
     width: 15rem;
 }
 
+.ninfa_caratula.dark{
+    filter: invert(1) brightness(.7);
+}
+
 .fecha{
     color: var(--font-color);
     font-size: 1.3rem;

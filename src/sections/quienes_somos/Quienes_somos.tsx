@@ -2,6 +2,7 @@ import './Quienes_somos.css';
 import { motion } from 'framer-motion';
 
 const Quienes_somos: React.FC = () => {
+    
     return (
         <>
             <motion.div

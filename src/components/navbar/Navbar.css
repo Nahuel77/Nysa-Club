@@ -92,7 +92,7 @@ a{
         box-shadow: 0 0 8rem black inset;
         width: 100vw;
         height: 100vh;
-        background-image: url('menu_vino_page.png');
+        background-image: url('./img/menu_vino_page.png');
         background-position: center;
         background-size: 98%;
         background-repeat: no-repeat;

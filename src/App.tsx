@@ -14,20 +14,20 @@ function App() {
 
   return (
     <>
-      <Navbar/>
-      <Portada/>
-      <Separador_grande/>
-      <Separator/>
-      <Section_one/>
-      <Separator/>
-      <Quienes_somos/>
-      <Separator/>
-      <Params/>
-      <Separator/>
-      <Fechas/>
-      <Separator/>
-      <Contacto/>
-      <Foot/>
+      <Navbar />
+      <Portada />
+      <Separador_grande />
+      <Separator />
+      <Section_one />
+      <Separator />
+      <Quienes_somos />
+      <Separator />
+      <Params />
+      <Separator />
+      <Fechas />
+      <Separator />
+      <Contacto />
+      <Foot />
     </>
   )
 }
