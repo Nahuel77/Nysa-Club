@@ -19,9 +19,9 @@
 }
 
 .info {
-    color: black;
+    color: var(--font-color);
     font-family: "Bosque";
-    -webkit-text-stroke: .3px black;
+    -webkit-text-stroke: .3px var(--font-color);
     font-weight: 400;
     font-style: normal;
     font-size: 1.5rem;

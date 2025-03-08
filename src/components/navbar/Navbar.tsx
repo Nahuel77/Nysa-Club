@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Navbar.css';
 import Redes from '../redes/Redes';
+import Theme_toggle from '../theme_toggle/Theme_toggle';
 
 function useMediaQuery(query: string) {
     const [matches, setMatches] = useState(window.matchMedia(query).matches);
@@ -66,10 +67,8 @@ const Navbar: React.FC = () => {
                     <div className='redes-content'>
                         <Redes />
                     </div>
-                    <div className='nysa_black_logo'>
-                        <a href="#">
-                            <img className='nysa_black' src="./img/nysa_logo_black.png" alt="Nysa Club" />
-                        </a>
+                    <div className='theme'>
+                        <Theme_toggle />
                     </div>
                 </div>
             </div>

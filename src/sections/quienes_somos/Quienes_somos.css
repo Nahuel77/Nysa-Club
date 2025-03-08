@@ -8,14 +8,13 @@
 }
 
 .quienes_content {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    /* align-items: top; */
+    max-width: 45rem;
 }
 
 .elegant-frame{
-    margin: 1rem;
+    margin: 1rem 1rem 0 1rem;
+    float: left;
 }
 
 .nymphes_de_Nysa{
@@ -23,19 +22,16 @@
     height: auto;
 }
 
-.quienes_text_container{
-    width: 22rem;
-    margin: 1rem;
-}
-
 .quienes_text {
-    color: black;
+    margin: .5rem 1rem;
+    width: auto;
+    color: var(--font-color);
     font-size: 1.3rem;
-    -webkit-text-stroke: .5px rgb(66, 66, 66);
-    text-align: center;
-    letter-spacing: -1px;
+    -webkit-text-stroke: .5px var(--font-color);
     font-style: normal;
     font-weight: 100;
+    line-height: 2rem;
+    text-align: justify;
 }
 
 @media (max-width: 768px) {

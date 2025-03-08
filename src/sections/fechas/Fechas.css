@@ -19,10 +19,10 @@
 }
 
 .fecha{
-    color: black;
+    color: var(--font-color);
     font-size: 1.3rem;
     font-family: "Bosque";
-    -webkit-text-stroke: .5px rgb(66, 66, 66);
+    -webkit-text-stroke: .5px var(--font-color);
     letter-spacing: -1px;
     font-style: normal;
     font-weight: 100;

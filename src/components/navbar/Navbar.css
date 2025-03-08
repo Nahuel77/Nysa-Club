@@ -41,25 +41,17 @@ a{
 
 .nysa_black {
     width: 64px;
-    position: absolute;
-    right: 6rem;
-    top: 1rem;
 }
 
 .menu-toggle {
     display: none;
     cursor: pointer;
-
     img {
         position: absolute;
         top: 1.5rem;
         left: 1.5rem;
         width: 4rem;
     }
-}
-
-.nysa_black_logo {
-    display: flex;
 }
 
 .menu-title {
@@ -71,6 +63,12 @@ a{
 
 .redes-content{
     display: none;
+}
+
+.theme{
+    position: absolute;
+    right: 6rem;
+    top: 1rem;
 }
 
 @media (max-width: 768px) {
