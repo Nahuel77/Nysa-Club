@@ -1,10 +1,11 @@
 .separador_grande{
     display: flex;
-    width: 100%;
+    width: 100vw;
+    max-height: 25rem;
     background-image: url('./img/bg_separador.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     justify-content: center;
     align-items: center;
 }

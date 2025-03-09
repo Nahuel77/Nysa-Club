@@ -3,3 +3,19 @@
   padding: 0;
   overflow: hidden;
 }
+
+.pattern{
+  background-image: url('./img/pattern_2.png');/*intentar colocar en el body para mejor respuesta*/
+  background-size: 30%;
+  filter: invert(0) brightness(.9);
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  z-index: -1;
+  padding-top: 6rem;
+  transition: .5s ease-in-out;
+}
+
+.pattern.dark{
+  filter: invert(1) brightness(.5);
+}

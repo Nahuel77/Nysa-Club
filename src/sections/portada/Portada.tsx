@@ -18,13 +18,14 @@ const Portada: React.FC = () => {
 
     return (
         <>
-            <motion.div className={`portada ${ themeMode ? 'dark' : ''}`}
+            <motion.div className="portada"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
                 viewport={{ once: false }}
             >
-                <div className='tono-portada'>
+                <div className={`caratula-portada ${ themeMode ? 'dark' : ''}`}></div>
+                <div className={`portada-content ${ themeMode ? 'dark' : ''}`}>
                     <div className='logo'><img className='nysa-logo' src="./img/nysa_logo.png" alt="Nysa" /></div>
                     <h1 className='marca'>Nysa Club</h1>
                     <div><Carrusel_frases /></div>

@@ -52,6 +52,7 @@ body {
   box-shadow: 0 0 8rem black inset;
   overflow-x: hidden;
   background-color: var(--bg-color);
+  transition: .5s ease-in-out;
 }
 
 h1 {
@@ -69,6 +70,7 @@ h2 {
   font-size: 4rem;
   -webkit-text-stroke: 1px var(--font-h2);
   margin: 5rem 0 1rem 0;
+  transition: .5s ease-in-out;
 }
 
 button {

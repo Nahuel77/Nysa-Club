@@ -14,15 +14,16 @@
     align-items: center;
 }
 
-.ninfa_caratula{
+.ninfa_caratula {
     width: 15rem;
+    transition: .5s ease-in-out;
 }
 
-.ninfa_caratula.dark{
-    filter: invert(1) brightness(.7);
+.ninfa_caratula.dark {
+    filter: invert(1) brightness(.5) sepia(1);
 }
 
-.fecha{
+.fecha {
     color: var(--font-color);
     font-size: 1.3rem;
     font-family: "Bosque";
@@ -34,10 +35,11 @@
 }
 
 @media (max-width: 768px) {
-    .fechas-caratulas{
+    .fechas-caratulas {
         display: none;
     }
-    .fechas-content{
+
+    .fechas-content {
         width: 19rem;
     }
 }
