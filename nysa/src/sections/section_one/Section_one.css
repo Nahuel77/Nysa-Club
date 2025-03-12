@@ -1,0 +1,34 @@
+.container_s_one{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.head_s_one{
+    color: var(--font-h3);
+    font-size: 1.5rem;
+    -webkit-text-stroke: .2px var(--font-h3);
+
+}
+
+.content_s_one{
+    font-size: 1.3rem;
+    -webkit-text-stroke: .2px var(--font-color);
+    width: 30rem;
+    color: var(--font-color);
+}
+
+@media (max-width: 768px) {
+
+    .head_s_one{
+        font-size: .9rem;
+    }
+
+    .content_s_one{
+        width: 18rem;
+    }
+}

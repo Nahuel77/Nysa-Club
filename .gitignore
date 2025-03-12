@@ -1,0 +1,48 @@
+#back
+# dependencies
+/back/node_modules
+
+#env
+/back/environments
+
+
+#front
+# dependencies
+/nysa/node_modules
+/nysa/.pnp
+/nysa/.pnp.*
+/nysa/.yarn/*
+/nysa/!.yarn/patches
+/nysa/!.yarn/plugins
+/nysa/!.yarn/releases
+/nysa/!.yarn/versions
+
+# testing
+/nysa/coverage
+
+#next
+/nysa/.next
+/nysa/out/
+
+# production
+/nysa/build
+
+# debug
+/nysa/npm-debug.log*
+/nysa/yarn-debug.log*
+/nysa/yarn-error.log*
+/nysa/.pnpm-debug.log*
+
+#ts
+/nysa/*.tsbuildinfo
+/nysa/next-env.d.ts
+
+#env
+/nysa/.env*
+
+# vercel
+/nysa/.vercel
+
+# misc
+/nysa.DS_Store
+/nysa*.pem

@@ -1,0 +1,87 @@
+:root {
+  font-family: "Bosque";
+  line-height: 1.5;
+
+  color-scheme: light dark;
+  color: #77151F;
+
+  overflow-x: hidden;
+
+  --bg-color: #EEE7DD;
+  --font-h3: #77151F;
+  --font-h2: #200205;
+  --font-color: #000;
+}
+
+[data-theme='dark'] {
+  --bg-color: #200205;
+  --font-h3: #D9DAD9;
+  --font-h2: #D9DAD9;
+  --font-color: #933A46;
+}
+
+@font-face{
+  font-family: "Bosque";
+  src: url("/fonts/bosque/BOSQUE.ttf");
+}
+
+@font-face{
+  font-family: "Autumn";
+  src: url("/fonts/autumn_wind/Autumn Wind.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  box-shadow: 0 0 8rem black inset;
+  overflow-x: hidden;
+  background-color: var(--bg-color);
+  transition: 1s ease-in-out;
+}
+
+p{
+  transition: 1s ease-in-out;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Autumn";
+  color: var(--font-h2);
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: 4rem;
+  -webkit-text-stroke: 1px var(--font-h2);
+  margin: 5rem 0 1rem 0;
+  transition: 1s ease-in-out;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

@@ -1,0 +1,5 @@
+IMPORTANTES
+
+En nysa/src/API.ts tener en cuenta que en desarrollo se configura un protocolo simple HTTP
+Cuando el cliente confirme que servidor usa, decidir si configurar un protocolo SSL o si el HTTPS es automatico del server
+Tambien agregar el baseURL al .env.production

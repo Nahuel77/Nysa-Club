@@ -1,0 +1,19 @@
+.theme-toggle{
+    cursor: pointer;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: linear-gradient(to bottom, #000000a1 60%, #00000000);
+    border-radius: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon{
+    fill: #9ea149;
+    transition: .5s ease-in-out;
+}
+
+.icon.light{
+    fill: #77151F;
+}

@@ -1,0 +1,21 @@
+.separator-content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0 0 0;
+}
+
+.separator{
+    width: 15rem;
+    transition: 1s ease-in-out;
+}
+
+.separator.dark{
+    filter: invert(1) brightness(.7);
+}
+
+@media (max-width: 768px) {
+    .separator{
+        width: 10rem;
+    }
+}

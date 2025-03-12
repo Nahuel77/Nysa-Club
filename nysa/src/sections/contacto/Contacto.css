@@ -1,0 +1,45 @@
+.contacto-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding-top: 3rem;
+
+}
+
+.contacto {
+    display: flex;
+    flex-direction: row;
+}
+
+.contacto-info,
+.contacto-form {
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.info {
+    color: var(--font-color);
+    font-family: "Bosque";
+    -webkit-text-stroke: .3px var(--font-color);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.city{
+    padding: .5rem;
+}
+
+.info-city{
+    line-height: 1;
+}
+
+@media (max-width: 768px) {
+    .contacto{
+        flex-direction: column;
+    }
+}

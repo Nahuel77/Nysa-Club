@@ -1,0 +1,135 @@
+.desk-navbar {
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+.content-fold {
+    display: flex;
+    background-color: #77151F;
+    justify-content: center;
+    align-items: center;
+    height: 3.5rem;
+    width: 100vw;
+}
+
+.opciones {
+    display: flex;
+    width: 32rem;
+    height: 2rem;
+    justify-content: space-between;
+    align-items: end;
+    font-family: "Bosque";
+    font-size: 20px;
+    text-shadow: 0px 4px 4px #000000;
+    margin: 0;
+    padding: 0;
+}
+
+.opcion {
+    list-style: none;
+}
+
+a{
+    color: white;/*revisar transparencia en opciones del menu, no deberia ser asi*/
+}
+
+.underline {
+    display: none;
+}
+
+.nysa_black {
+    width: 64px;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    img {
+        position: absolute;
+        top: 1.5rem;
+        left: 1.5rem;
+        width: 4rem;
+    }
+}
+
+.menu-title {
+    color: #77151F;
+    font-size: 4rem;
+    margin: 1rem 0 15rem;
+    display: none;
+}
+
+.redes-content{
+    display: none;
+}
+
+.theme{
+    position: absolute;
+    right: 6rem;
+    top: 1rem;
+}
+
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nysa_black_logo {
+        display: none;
+    }
+
+    .menu-title {
+        display: flex;
+        text-shadow: 0px 8px 6px #00000086;
+    }
+
+    .content-fold {
+        position: initial;
+        background-color: #EEE7DD;
+        box-shadow: 0 0 8rem black inset;
+        width: 100vw;
+        height: 100vh;
+        background-image: url('/img/menu_vino_page.png');
+        background-position: center;
+        background-size: 98%;
+        background-repeat: no-repeat;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .opciones {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 3.2rem;
+
+        a {
+            color: #000000;
+        }
+    }
+
+    .opcion {
+        display: flex;
+        text-shadow: none;
+        flex-direction: column;
+        padding-bottom: 2rem;
+        align-items: center;
+    }
+
+    .underline {
+        display: flex;
+        width: 10rem;
+    }
+
+    .redes-content {
+        display: flex;
+        position: absolute;
+        bottom: 5rem;
+        right: 5rem;
+    }
+
+}

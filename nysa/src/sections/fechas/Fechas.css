@@ -1,0 +1,45 @@
+.fechas-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.fechas-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ninfa_caratula {
+    width: 15rem;
+    transition: .5s ease-in-out;
+}
+
+.ninfa_caratula.dark {
+    filter: invert(1) brightness(.5) sepia(1);
+}
+
+.fecha {
+    color: var(--font-color);
+    font-size: 1.3rem;
+    font-family: "Bosque";
+    -webkit-text-stroke: .5px var(--font-color);
+    letter-spacing: -1px;
+    font-style: normal;
+    font-weight: 100;
+    padding: .5rem;
+}
+
+@media (max-width: 768px) {
+    .fechas-caratulas {
+        display: none;
+    }
+
+    .fechas-content {
+        width: 19rem;
+    }
+}
