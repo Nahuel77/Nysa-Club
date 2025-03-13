@@ -10,6 +10,7 @@
   --bg-color: #EEE7DD;
   --font-h3: #77151F;
   --font-h2: #200205;
+  --font-h1: #77151F;
   --font-color: #000;
 }
 
@@ -17,6 +18,7 @@
   --bg-color: #200205;
   --font-h3: #D9DAD9;
   --font-h2: #D9DAD9;
+  --font-h1: #615032;
   --font-color: #933A46;
 }
 
@@ -52,6 +54,7 @@ h1 {
   line-height: 1.1;
   padding: 0;
   margin: 0;
+  color: var(--font-h1);
 }
 
 h2 {
