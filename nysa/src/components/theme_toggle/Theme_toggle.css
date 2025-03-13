@@ -17,3 +17,9 @@
 .icon.light{
     fill: #77151F;
 }
+
+@media (max-width: 768px) {
+    .theme-toggle{
+        background: none;
+    }
+}

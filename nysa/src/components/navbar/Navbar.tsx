@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import './Navbar.css';
 import Redes from '../redes/Redes';
 import Theme_toggle from '../theme_toggle/Theme_toggle';
+import { useTheme } from "../../context/ThemeContext";
 
 function useMediaQuery(query: string) {
     const [matches, setMatches] = useState(false);
@@ -26,6 +27,16 @@ const Navbar: React.FC = () => {
     const [menuOpen, setMenuOpen] = useState<boolean>(false);
     const [menuVisibility, setMenuVisivility] = useState<string>('none');
     const isMobile = useMediaQuery("(max-width: 768px)");
+    const [themeMode, setThemeMode] = useState<boolean>(false);
+    const { theme } = useTheme();
+
+    useEffect(() => {
+        if (theme == 'dark') {
+            setThemeMode(true);
+        } else {
+            setThemeMode(false);
+        }
+    }, [theme]);
 
     const handleMenu = () => {
         setMenuOpen(!menuOpen);
@@ -54,22 +65,23 @@ const Navbar: React.FC = () => {
                     <img src="./img/menu_wax.png" alt="menu" />
                 </div>
                 <div className='content-fold' style={{ display: menuVisibility }}>
+                    <div className={`menu-portada ${themeMode ? 'dark' : ''}`}><img src='./img/menu_vino_page.png' alt="nysa ilustration" /></div>
                     <h2 className='menu-title'>Menu</h2>
                     <ul className='opciones'>
                         <li className='opcion'>
                             <a href="#quienes_somos">Quienes Somos</a>
-                            <img className='underline' src="./img/under-line-menu.png" alt="underline" />
+                            <img className={`underline ${themeMode ? 'dark' : ''}`} src="./img/under-line-menu.png" alt="underline" />
                         </li>
                         <li className='opcion'>
                             <a href="#fechas">Próximos Eventos</a>
-                            <img className='underline' src="./img/under-line-menu.png" alt="underline" />
+                            <img className={`underline ${themeMode ? 'dark' : ''}`} src="./img/under-line-menu.png" alt="underline" />
                         </li>
                         <li className='opcion'>
                             <a href="#contacto">Contacto</a>
-                            <img className='underline' src="./img/under-line-menu.png" alt="underline" />
+                            <img className={`underline ${themeMode ? 'dark' : ''}`} src="./img/under-line-menu.png" alt="underline" />
                         </li>
                     </ul>
-                    <div className='redes-content'>
+                    <div className={`redes-content ${themeMode ? 'dark' : ''}`}>
                         <Redes />
                     </div>
                     <div className='theme'>

@@ -22,7 +22,7 @@
     transition: 1s ease-in-out;
 }
 
-.pattern.dark{
+.pattern.dark {
     filter: invert(1) brightness(.5);
 }
 
@@ -81,8 +81,35 @@
     text-shadow: 0px 4px 6px #000000;
 }
 
+.frases {
+    display: block;
+}
+
 @media (max-width: 768px) {
     .caratula-portada {
         background-image: none;
+    }
+
+    .pattern,
+    .caratula-portada {
+        height: 55vh;
+    }
+
+    .pattern {
+        min-height: 55%;
+        max-height: 30vh;
+    }
+
+    .portada-content {
+        height: 55vh;
+        padding-top: 2rem;
+    }
+
+    .portada {
+        height: 55vh;
+    }
+
+    .frases {
+        display: none;
     }
 }

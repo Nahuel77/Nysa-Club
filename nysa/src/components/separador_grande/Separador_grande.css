@@ -8,8 +8,26 @@
     background-size: cover;
     justify-content: center;
     align-items: center;
+    margin: 0 0 2rem 0;
 }
 
 .nysa_wax{
     width: 30rem;
+}
+
+@media (max-width: 768px) {
+
+    .separador_grande{
+        max-height: 11rem;
+    }
+
+    .nysa_wax{
+        width: 15rem;
+    }
+
+    .frases_{
+        display: block;
+        height: auto;
+        width: 100vw;
+    }
 }

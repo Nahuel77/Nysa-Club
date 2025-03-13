@@ -30,7 +30,7 @@ const Portada: React.FC = () => {
                 <div className={`portada-content ${ themeMode ? 'dark' : ''}`}>
                     <div className='logo'><img className='nysa-logo' src="./img/nysa_logo.png" alt="Nysa" /></div>
                     <h1 className='marca'>Nysa Club</h1>
-                    <div><Carrusel_frases /></div>
+                    <div className='frases'><Carrusel_frases /></div>
                 </div>
             </motion.div>
         </>
