@@ -81,9 +81,9 @@ const Navbar: React.FC = () => {
                             <img className={`underline ${themeMode ? 'dark' : ''}`} src="./img/under-line-menu.png" alt="underline" />
                         </li>
                     </ul>
-                    {/* <div className={`redes-content ${themeMode ? 'dark' : ''}`}>
+                    <div className={`redes-content ${themeMode ? 'dark' : ''}`}>
                         <Redes />
-                    </div> */}
+                    </div>
                     <div className='theme' onClick={ isMobile ? handleMenu : undefined }>
                         <Theme_toggle />
                     </div>
