@@ -10,6 +10,10 @@
     margin: .5rem;
 }
 
+.redlnk{
+    transition: 1s ease-in-out;
+}
+
 .redlnk.dark {
     filter: invert(1) brightness(.7);
 }
