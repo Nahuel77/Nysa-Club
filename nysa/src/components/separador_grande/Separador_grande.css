@@ -18,16 +18,20 @@
 @media (max-width: 768px) {
 
     .separador_grande{
-        max-height: 9rem;
+        max-height: 7rem;
     }
 
     .nysa_wax{
-        width: 12rem;
+        width: 9rem;
     }
 
     .frases_{
         display: block;
         height: auto;
         width: 100vw;
+        p{
+            /* font-size: 2rem;
+            line-height: 1.8rem; */
+        }
     }
 }

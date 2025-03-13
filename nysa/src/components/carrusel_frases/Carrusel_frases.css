@@ -23,3 +23,10 @@
 .frase-portada.fade {
     opacity: 0;
 }
+
+@media (max-width: 768px) {
+    .frase-portada {
+        font-size: 2.5rem;
+        line-height: 1.8rem;
+    }
+}

@@ -95,12 +95,12 @@
     }
 
     .pattern {
-        min-height: 55%;
+        min-height: 50%;
         max-height: 70%;
     }
 
     .portada-content {
-        min-height: 55vh;
+        min-height: 50vh;
         padding-top: 2rem;
     }
 
@@ -111,5 +111,18 @@
 
     .frases {
         display: none;
+    }
+
+    .logo{
+        width: 13rem;
+        height: 13rem;
+    }
+
+    .nysa-logo{
+        width: 5rem;
+    }
+
+    .marca{
+        font-size: 3rem;
     }
 }
