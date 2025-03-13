@@ -74,6 +74,10 @@ a {
     top: 1rem;
 }
 
+.menu-portada{
+    display: none;
+}
+
 @media (max-width: 768px) {
 
     .menu-toggle {
@@ -122,6 +126,7 @@ a {
         flex-direction: column;
         padding-bottom: 2rem;
         align-items: center;
+        z-index: 2;
     }
 
     .underline {
@@ -138,10 +143,6 @@ a {
         position: absolute;
         bottom: 5rem;
         right: 5rem;
-    }
-
-    .redes-content.dark {
-        filter: invert(1) brightness(.7);
     }
 
     .theme {
@@ -162,6 +163,10 @@ a {
             width: 98%;
             height: 98%;
         }
+    }
+
+    .menu-portada.dark{
+        filter: invert(1) brightness(.7);
     }
 
 }

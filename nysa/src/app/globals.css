@@ -94,5 +94,7 @@ a {
 }
 
 @media (max-width: 768px){
-  
+  h2{
+    font-size: 3rem;
+  }
 }

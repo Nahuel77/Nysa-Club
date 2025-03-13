@@ -1,11 +1,15 @@
-.redes{
+.redes {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 1rem;
 }
 
-.red-img{
+.red-img {
     width: 3rem;
     margin: .5rem;
+}
+
+.redlnk.dark {
+    filter: invert(1) brightness(.7);
 }

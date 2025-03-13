@@ -12,15 +12,21 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .ninfa_caratula {
     width: 15rem;
+    margin: 1rem;
     transition: .5s ease-in-out;
 }
 
 .ninfa_caratula.dark {
     filter: invert(1) brightness(.5) sepia(1);
+}
+
+.fechas{
+    margin: 1rem;
 }
 
 .fecha {
@@ -41,5 +47,13 @@
 
     .fechas-content {
         width: 19rem;
+    }
+
+    .fechas{
+        text-align: center;
+    }
+
+    .fecha{
+        list-style: none;
     }
 }
