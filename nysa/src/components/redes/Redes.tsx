@@ -18,10 +18,22 @@ const Redes: React.FC = () => {
 
         <>
             <div className='redes'>
-                <div className={`redlnk ${themeMode ? 'dark' : ''}`}><img className='red-img' src="./img/youtb.png" alt="" /></div>
-                <div className={`redlnk ${themeMode ? 'dark' : ''}`}><img className='red-img' src="./img/face.png" alt="" /></div>
-                <div className={`redlnk ${themeMode ? 'dark' : ''}`}><img className='red-img' src="./img/insta.png" alt="" /></div>
-            </div>
+                <div className={`redlnk ${themeMode ? 'dark' : ''}`}>
+                    <a href="https://www.youtube.com/nysaclub" target="_blank" rel="noopener noreferrer">
+                        <img className='red-img' src="./img/youtb.png" alt="" />
+                    </a>
+                </div>
+                <div className={`redlnk ${themeMode ? 'dark' : ''}`}>
+                    <a href="https://www.facebook.com/nysaclubmdq" target="_blank" rel="noopener noreferrer">
+                        <img className='red-img' src="./img/face.png" alt="" />
+                    </a >
+                </div>
+                <div className={`redlnk ${themeMode ? 'dark' : ''}`}>
+                    <a href="https://www.instagram.com/nysaclub/" target="_blank" rel="noopener noreferrer">
+                        <img className='red-img' src="./img/insta.png" alt="" />
+                    </a >
+                </div>
+            </div >
         </>
     );
 }

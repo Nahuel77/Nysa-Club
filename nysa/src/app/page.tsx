@@ -7,6 +7,7 @@ import Portada from "@/sections/portada/Portada";
 import Quienes_somos from "@/sections/quienes_somos/Quienes_somos";
 import Section_one from "@/sections/section_one/Section_one";
 import styles from "./page.module.css";
+import GaleriaCliente from "@/sections/galeria/Galeria";
 
 export default function Home() {
   
@@ -18,6 +19,8 @@ export default function Home() {
         <Section_one />
         <Separator />
         <Quienes_somos />
+        <Separator />
+        {/* <GaleriaCliente /> */}
         <Separator />
         <Params />
         <Separator />
