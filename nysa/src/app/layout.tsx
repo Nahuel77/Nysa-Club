@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import { ThemeProvider } from "@/context/ThemeContext";
 import Foot from "@/components/foot/Foot";
+import Home_button from "@/components/home_button/Home_button";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,6 +31,7 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <ThemeProvider>
           <Navbar />
+          <Home_button/>
           {children}
           <Foot />
         </ThemeProvider>
