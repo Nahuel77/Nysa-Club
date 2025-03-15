@@ -20,7 +20,7 @@ export default function Home() {
         <Separator />
         <Quienes_somos />
         <Separator />
-        {/* <GaleriaCliente /> */}
+        <GaleriaCliente />
         <Separator />
         <Params />
         <Separator />

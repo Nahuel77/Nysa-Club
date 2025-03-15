@@ -1,0 +1,61 @@
+.galeria-container {
+    position: relative;
+    width: 98%;
+    overflow: hidden;
+    display: flex;
+    align-self: center;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeria {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-auto-flow: column;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.galeria-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    height: 100%;
+    transform: translateY(-50%);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 4rem;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+.scroll-btn.left {
+    text-align: left;
+    padding: 1rem;
+    left: 0px;
+    background: linear-gradient(to right, rgba(134, 134, 134, 0.8) 70%, rgba(0, 0, 0, 0));
+}
+
+.scroll-btn.right {
+    text-align: right;
+    padding: 1rem;
+    right: 0px;
+    background: linear-gradient(to left, rgb(134, 134, 134, 0.8) 70%, rgba(0, 0, 0, 0));
+}
+
+.galeria-titulo {
+    align-self: center;
+}
