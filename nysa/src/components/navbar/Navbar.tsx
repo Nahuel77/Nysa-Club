@@ -72,6 +72,11 @@ const Navbar: React.FC = () => {
                             <a href="#quienes_somos" onClick={isMobile ? handleMenu : undefined}>Quienes Somos</a>
                             <img className={`underline ${themeMode ? 'dark' : ''}`} src="./img/under-line-menu.png" alt="underline" />
                         </li>
+                        <li className="opcion">
+                            <a href="#galeria" onClick={isMobile ? handleMenu : undefined}>Galería
+                                <img className={`underline ${themeMode ? 'dark' : ''}`} src="./img/under-line-menu.png" alt="underline" />
+                            </a>
+                        </li>
                         <li className='opcion'>
                             <a href="#fechas" onClick={isMobile ? handleMenu : undefined}>Próximos Eventos</a>
                             <img className={`underline ${themeMode ? 'dark' : ''}`} src="./img/under-line-menu.png" alt="underline" />

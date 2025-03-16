@@ -1,3 +1,8 @@
+#galeria{
+    display: flex;
+    flex-direction: column;
+}
+
 .galeria-container {
     position: relative;
     width: 98%;
@@ -58,4 +63,5 @@
 
 .galeria-titulo {
     align-self: center;
+    margin-bottom: 3rem;
 }
