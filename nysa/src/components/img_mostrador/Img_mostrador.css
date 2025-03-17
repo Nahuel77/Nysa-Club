@@ -1,0 +1,23 @@
+.mostrador-container {
+    position: absolute;
+    position: fixed;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.93);
+    z-index: 5;
+    justify-content: center;
+    align-items: center;
+}
+
+.mostrador-container.show{
+    display: flex;
+}
+
+.mostrador-container.hidden{
+    display: none;
+}
+
+.img-seleccionada{
+    height: 98vh;
+}

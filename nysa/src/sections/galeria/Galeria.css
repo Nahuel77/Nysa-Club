@@ -25,11 +25,24 @@
     overflow: hidden;
 }
 
+.img-container{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
 .galeria-img {
     width: 200px;
     height: 200px;
     border-radius: 10px;
     object-fit: cover;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+
+.galeria-img:hover{
+    transform: scale(1.5);
 }
 
 .scroll-btn {

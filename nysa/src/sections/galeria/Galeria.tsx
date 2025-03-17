@@ -1,9 +1,9 @@
 "use client";
 import './Galeria.css';
 import dynamic from "next/dynamic";
-import { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-
+import Img_mostrador from '@/components/img_mostrador/Img_mostrador';
 
 // import { getImages } from '@/api/apiService';
 
@@ -13,12 +13,13 @@ import { AnimatePresence, motion } from 'framer-motion';
 //     url: string;
 // };
 
-const Galeria = () => {
+const Galeria: React.FC = () => {
     const [images, setImages] = useState<string[]>([]);
     const scrollRef = useRef<HTMLDivElement>(null);
     const [scrollAmount, setScrollAmount] = useState(0);
+    const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
-    useEffect(()=>{
+    useEffect(() => {
         const handleResize = () => {
             setScrollAmount(window.innerWidth * 0.7);
         };
@@ -63,9 +64,8 @@ const Galeria = () => {
                 const data = await res.json();
 
                 const imageUrls = data.files.map((file: any) =>
-                    `https://drive.google.com/thumbnail?id=${file.id}`
+                    `${file.id}`
                 );
-
                 setImages(imageUrls);
             } catch (error) {
                 console.error("Error al obtener imágenes:", error);
@@ -89,12 +89,15 @@ const Galeria = () => {
                     <button className="scroll-btn left" onClick={scrollLeft}>◀</button>
                     <div className="galeria" ref={scrollRef}>
                         {images.map((url, index) => (
-                            <img key={index} src={`${url}`} alt={`Imagen ${index}`} className="galeria-img" />
+                            <div className="img-container" key={index}>
+                                <img onClick={() => setSelectedImage(url)} key={index} src={`https://drive.google.com/thumbnail?id=${url}`} alt={`Nysa ${index}`} className="galeria-img" />
+                            </div>
                         ))}
                     </div>
                     <button className="scroll-btn right" onClick={scrollRight}>▶</button>
                 </div>
             </motion.div></AnimatePresence>
+            {selectedImage && <Img_mostrador url={selectedImage} onClose={() => setSelectedImage(null)} />}
         </>
     );
 }
