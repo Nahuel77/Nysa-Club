@@ -111,7 +111,7 @@ a {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 35vh;
+        height: 37vh;
         a {
             color: var(--font-h2);
         }

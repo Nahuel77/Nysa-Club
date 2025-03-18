@@ -8,12 +8,13 @@ interface geleriaProps {
 }
 
 const Img_mostrador: React.FC<geleriaProps> = ({ url, onClose }) => {
+    // Cambiar de carpetas google a Claudinary
 
     return (
         <>
             <div className={`mostrador-container show`}>
+                <img src={url? `https://lh3.googleusercontent.com/d/${url}=s880?authuser=0` : './img/loading.png'} alt="Imagen Nysa-Club" className="img-seleccionada" />
                 <button className="close" onClick={onClose}>x</button>
-                <img src={`https://lh3.googleusercontent.com/d/${url}=s880?authuser=0`} alt="Imagen Nysa-Club" className="img-seleccionada" />
             </div>
         </>
     );

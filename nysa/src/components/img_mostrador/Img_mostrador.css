@@ -10,14 +10,30 @@
     align-items: center;
 }
 
-.mostrador-container.show{
+.mostrador-container.show {
     display: flex;
 }
 
-.mostrador-container.hidden{
+.mostrador-container.hidden {
     display: none;
 }
 
-.img-seleccionada{
+.img-seleccionada {
     height: 98vh;
+}
+
+.close {
+    width: 2rem;
+    height: auto;
+    font-size: 2rem;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+}
+
+@media (max-width: 768px) {
+    .img-seleccionada{
+        height: auto;
+        width: 98vw;
+    }
 }
